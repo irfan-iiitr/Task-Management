@@ -20,7 +20,7 @@ This project is a user-friendly frontend interface for a Task Management System 
 To get started with this project, clone the repository and install the dependencies:
 
 ```bash
-git clone https://github.com/yourusername/yourrepository.git
+git clone https://github.com/irfan-iiitr/Task-Management.git
 cd yourrepository
 npm install
 npm run dev
