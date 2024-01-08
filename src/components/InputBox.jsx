@@ -26,15 +26,10 @@ const InputBox = () => {
 
   const handleTodo = (e) => {
     e.preventDefault();
-
-
     if (isEditing) {
       dispatch(
         updateTodo({
-          id: isEditing.id,
-          todo: newTodo,
-          category: newCategory,
-          complete: isEditing.complete
+          id: isEditing.id,todo: newTodo,category: newCategory,complete: isEditing.complete
         })
       )
       setNewTodo("");
@@ -48,10 +43,7 @@ const InputBox = () => {
       else {
         dispatch(
           addTodos({
-            id: Math.random() * 1000,
-            todo: todo,
-            category: category,
-            complete: false
+            id: Math.random() * 1000, todo: todo, category: category, complete: false
           })
         )
         setTodo("");
@@ -110,8 +102,8 @@ const InputBox = () => {
           </label>
         </div>
       )
-
       }
+          {/* Submit Button */}
       <button onClick={handleTodo} className='w-full border mt-3 border-gray-400 hover:border-gray-200 duration-200 font-titleFont
         font-semibold text-gray-300 hover:text-red-500 h-10 uppercase rounded-md '>
         Add Todo
@@ -144,8 +136,7 @@ const InputBox = () => {
       </div>
       {  showError ? <ErrorMsg errMsg={errMsg}></ErrorMsg> : null }
       {   showSuccess ? <SuccessMsgToast successMsg={successMsg} ></SuccessMsgToast> : null }
-
-      { showRemoveAll && <RemoveAll setShowRemoveAll={setShowRemoveAll}></RemoveAll>}
+      {     showRemoveAll && <RemoveAll setShowRemoveAll={setShowRemoveAll}></RemoveAll>}
     </div>
   )
 }
