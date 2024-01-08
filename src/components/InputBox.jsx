@@ -39,6 +39,7 @@ const InputBox = () => {
           id:isEditing.id,
           todo:newTodo,
           category:newCategory,
+          complete:isEditing.complete
         })
       )
       setNewTodo("");
@@ -54,7 +55,8 @@ const InputBox = () => {
           addTodos({
             id:Math.random()*1000,
             todo:todo,
-            category:category
+            category:category,
+            complete:false
           })
           )
       setTodo("");
@@ -74,7 +76,7 @@ const InputBox = () => {
     return ()=>clearTimeout(timer)
   },[showError,showSuccess])
 
-console.log(isEditing);
+// console.log(isEditing);
 
   return (
     
