@@ -32,4 +32,9 @@ npm run dev
 - [Redux Toolkit](https://redux-toolkit.js.org/): The official, opinionated, batteries-included toolset for efficient Redux development.
 - [Local Storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage): Allows to save key/value pairs in a web browser.
 
+## Samples
 
+https://github.com/irfan-iiitr/Task-Management/assets/123577873/7908a396-46fe-4813-abe7-4f523f5dbbe8
+
+## Deployed Link
+-[Link](https://task-management-five-chi.vercel.app/)
