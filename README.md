@@ -24,5 +24,12 @@ git clone https://github.com/irfan-iiitr/Task-Management.git
 cd yourrepository
 npm install
 npm run dev
+```
+
+## Technologies Used
+- [React](https://reactjs.org/): A JavaScript library for building user interfaces.
+- [Redux](https://redux.js.org/): A predictable state container for JavaScript apps.
+- [Redux Toolkit](https://redux-toolkit.js.org/): The official, opinionated, batteries-included toolset for efficient Redux development.
+- [Local Storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage): Allows to save key/value pairs in a web browser.
 
 
